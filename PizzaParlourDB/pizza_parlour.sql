@@ -169,18 +169,18 @@ CREATE TABLE IF NOT EXISTS `pizza_parlour`.`product` (
   `description` VARCHAR(350) NULL,
   `image` BLOB NULL,
   `price` DECIMAL(4,2) NULL,
-  `order_order_id` INT NOT NULL,
-  `product_category_product_category_id` INT NOT NULL,
+  `order_id` INT NOT NULL,
+  `product_category_id` INT NOT NULL,
   PRIMARY KEY (`product_id`),
-  INDEX `fk_product_order1_idx` (`order_order_id` ASC),
-  INDEX `fk_product_product_category1_idx` (`product_category_product_category_id` ASC),
+  INDEX `fk_product_order1_idx` (`order_id` ASC),
+  INDEX `fk_product_product_category1_idx` (`product_category_id` ASC),
   CONSTRAINT `fk_product_order1`
-    FOREIGN KEY (`order_order_id`)
+    FOREIGN KEY (`order_id`)
     REFERENCES `pizza_parlour`.`order` (`order_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
   CONSTRAINT `fk_product_product_category1`
-    FOREIGN KEY (`product_category_product_category_id`)
+    FOREIGN KEY (`product_category_id`)
     REFERENCES `pizza_parlour`.`product_category` (`product_category_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
