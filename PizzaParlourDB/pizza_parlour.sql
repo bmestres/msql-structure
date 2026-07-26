@@ -24,7 +24,6 @@ CREATE TABLE IF NOT EXISTS `pizza_parlour`.`province` (
   PRIMARY KEY (`province_id`),
   UNIQUE INDEX `province_id_UNIQUE` (`province_id` ASC) VISIBLE)
 ENGINE = InnoDB
-AUTO_INCREMENT = 5
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -44,7 +43,6 @@ CREATE TABLE IF NOT EXISTS `pizza_parlour`.`locality` (
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB
-AUTO_INCREMENT = 5
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -75,7 +73,6 @@ CREATE TABLE IF NOT EXISTS `pizza_parlour`.`client` (
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB
-AUTO_INCREMENT = 3
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -103,7 +100,6 @@ CREATE TABLE IF NOT EXISTS `pizza_parlour`.`store` (
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB
-AUTO_INCREMENT = 4
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -127,7 +123,6 @@ CREATE TABLE IF NOT EXISTS `pizza_parlour`.`employee` (
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB
-AUTO_INCREMENT = 4
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -163,7 +158,6 @@ CREATE TABLE IF NOT EXISTS `pizza_parlour`.`order` (
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB
-AUTO_INCREMENT = 3
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -176,7 +170,6 @@ CREATE TABLE IF NOT EXISTS `pizza_parlour`.`product_category` (
   `name` VARCHAR(50) NULL DEFAULT NULL,
   PRIMARY KEY (`product_category_id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 3
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 

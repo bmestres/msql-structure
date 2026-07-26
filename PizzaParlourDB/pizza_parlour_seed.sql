@@ -6,7 +6,7 @@ VALUES
 
 INSERT INTO locality(name, province_id)
 VALUES 
-('Sabadell', 1), ('Olot', 2),  ('Alcanar', 3), ('Pont de Suert', 4);
+('Sabadell', 1), ('Olot',2),  ('Alcanar', 3), ('Pont de Suert', 4);
 
 INSERT INTO client(name, surname, address, locality_id, province_id, phone, postal_code)
 VALUES 
@@ -36,7 +36,7 @@ VALUES
 ('Classic Pizzas'),
 ('Soft Drinks');
 
-INSERT INTO product(name, description, price, order_id, product_category__id)
+INSERT INTO product(name, description, price, order_id, product_category_id)
 VALUES
 ('Margherita Pizza', 'Tomato, Mozzarella, Basil', 10.50, 1, 1),
 ('Coca Cola', '330ml Can', 2.50, 1, 2);
