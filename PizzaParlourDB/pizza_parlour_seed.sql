@@ -36,7 +36,7 @@ VALUES
 ('Classic Pizzas'),
 ('Soft Drinks');
 
-INSERT INTO product(name, description, price, order_id, product_category_product_category_id)
+INSERT INTO product(name, description, price, order_id, product_category__id)
 VALUES
 ('Margherita Pizza', 'Tomato, Mozzarella, Basil', 10.50, 1, 1),
 ('Coca Cola', '330ml Can', 2.50, 1, 2);
