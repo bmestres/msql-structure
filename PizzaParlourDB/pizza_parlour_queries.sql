@@ -1,4 +1,6 @@
 
+-- Test 01: List number of drinks sold in locality Sabadell
+
 SELECT 
     locality.name AS Location,
     product_category.name AS Category,
@@ -14,6 +16,7 @@ WHERE locality.locality_id = 1
 AND product_category.name = 'Soft Drinks'
 GROUP BY locality.name, product_category.name;
 
+-- Test 02: List number of commands managed by employee Carlos Farinelli
 
 SELECT 
     employee.name AS Name,
