@@ -11,21 +11,20 @@ The project contains a series of simple relational databases built using MySQL. 
 - Version control: Git & GitHub
 
 
-**Installation and Execution:**<br>
+###Installation and Execution:<br>
 https://github.com/bmestres/msql-structure.git
 
 **How to run:**<br>
+
 Import/Run the files in this order for each project:
 
-**Schema:** Run the schema.sql files to build the table structures.
+- **Schema:**<br>Run the schema.sql files to build the table structures.
 
-**Seed:** Run the seed.sql file to populate the database with dummy data.
+- **Seed:**<br> Run the seed.sql file to populate the database with dummy data.
 
-**Queries:** queries.sql file to test specific business requirements.
+- **Queries:**<br> queries.sql file to test specific business requirements.
 
-
-
-### Project structure
+### Project structure:
 
 **1. GlassesOpticDB:**<br>
 Database schema for an optical store, with inventory and clients databse.
