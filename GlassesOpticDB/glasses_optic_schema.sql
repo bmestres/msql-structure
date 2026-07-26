@@ -29,7 +29,6 @@ CREATE TABLE IF NOT EXISTS `glasses_optic`.`address` (
   `country` VARCHAR(30) NOT NULL,
   PRIMARY KEY (`address_id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 5
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -52,7 +51,6 @@ CREATE TABLE IF NOT EXISTS `glasses_optic`.`provider` (
     REFERENCES `glasses_optic`.`address` (`address_id`)
     ON UPDATE CASCADE)
 ENGINE = InnoDB
-AUTO_INCREMENT = 4
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -71,7 +69,6 @@ CREATE TABLE IF NOT EXISTS `glasses_optic`.`brand` (
     REFERENCES `glasses_optic`.`provider` (`provider_id`)
     ON UPDATE CASCADE)
 ENGINE = InnoDB
-AUTO_INCREMENT = 5
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -101,7 +98,6 @@ CREATE TABLE IF NOT EXISTS `glasses_optic`.`client` (
     ON DELETE SET NULL
     ON UPDATE CASCADE)
 ENGINE = InnoDB
-AUTO_INCREMENT = 2
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -114,7 +110,6 @@ CREATE TABLE IF NOT EXISTS `glasses_optic`.`employee` (
   `name` VARCHAR(30) NOT NULL,
   PRIMARY KEY (`employee_id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 3
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -140,7 +135,6 @@ CREATE TABLE IF NOT EXISTS `glasses_optic`.`glasses` (
     REFERENCES `glasses_optic`.`brand` (`brand_id`)
     ON UPDATE CASCADE)
 ENGINE = InnoDB
-AUTO_INCREMENT = 5
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -171,7 +165,6 @@ CREATE TABLE IF NOT EXISTS `glasses_optic`.`sale` (
     REFERENCES `glasses_optic`.`glasses` (`glasses_id`)
     ON UPDATE CASCADE)
 ENGINE = InnoDB
-AUTO_INCREMENT = 2
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
