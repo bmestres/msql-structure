@@ -1,6 +1,6 @@
 # MySql Data structures
 
-**Description:** <br>
+### Description: <br>
 
 The project contains a series of simple relational databases built using MySQL. Each database contains a relational model as well as the .sql scripts.
 
@@ -11,12 +11,16 @@ The project contains a series of simple relational databases built using MySQL. 
 - Version control: Git & GitHub
 
 
-###Installation and Execution:<br>
+### Installation and Execution:<br>
 https://github.com/bmestres/msql-structure.git
 
-**How to run:**<br>
+### How to run:<br>
 
-Import/Run the files in this order for each project:
+1. **Start the database:**
+   ```bash
+   docker-compose up -d
+
+2. **Import/Run the files** in this order for each project:
 
 - **Schema:**<br>Run the schema.sql files to build the table structures.
 
@@ -35,7 +39,7 @@ Database for a pizza delivery chain managing orders, employees, and locations.
 **3. YouTubeDB:**<br>
 Symplified schema for a video streaming platform with video publishing, user interactions and subscriptions.
 
-
+### Repo overview:
 
 ```text
 .
