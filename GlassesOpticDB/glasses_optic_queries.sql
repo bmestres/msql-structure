@@ -32,8 +32,6 @@ JOIN provider ON brand.provider_id = provider.provider_id;
 
 
 
-
-
     
 
 
